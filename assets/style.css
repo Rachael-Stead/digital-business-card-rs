@@ -1,0 +1,152 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+    background-color: #a82f4c;
+  }
+  
+  .hero {
+    position: relative;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    background-image: url(https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExMzczN2IxZjUxMjA0MmJkODE3NTliMzc1NWFhNjc3MGE3MjliY2M2OSZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/3o6Ygi2n1vAKEwpRqE/giphy.gif);
+    background-size: 285px;
+    height: 200px;
+    font-size: 85px;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  
+  }
+  
+  .hero img {
+    padding: 5px;
+    height: 450px;
+    width: 250px;
+    box-shadow: 20px;
+    margin-top: 40px;
+  }
+  
+  
+  
+  .container1 {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 250px;
+    width: 100px;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    background-color: #bb4d67;
+    border-radius: 20px;
+  
+  }
+  
+  .jiggle img {
+    width: 70px;
+    height: 70px;
+    border-radius: 20px;
+    opacity: 80%;
+    margin-left: 15px;
+  }
+  
+  .jiggle-animation {
+    animation: jiggle 0.5s infinite;
+  }
+  
+  .box {
+    position: relative;
+    overflow: hidden;
+    width: 500px;
+    height: 990px;
+    border: #bb4d67;
+    border-radius: 5px;
+    margin-left: 100%;
+  }
+  
+  .box-content img {
+    object-fit: cover;
+    transition: opacity 0.5s ease;
+    opacity: 0;
+    border-radius: 20px;
+  }
+    
+    .box-content .clicked img {
+      opacity: 1;
+    }
+  
+  
+    .box-content {
+      width: 100%;
+      height: 100%;
+      background-color: #e8ce8b;
+      position: absolute;
+      top: 0;
+      transition: opacity 0.5s ease;
+      opacity: 1;
+      z-index: 1;
+      border-radius: px;
+    }
+  
+    .box-content p {
+      text-align: center;
+      justify-content: center;
+      margin-top: 10px;
+      padding: 5px;
+      color: #a82f4c;
+    }
+  
+  .box.clicked .box-content {
+    opacity: 0;
+  
+  }
+  
+  .footer {
+    background-image: url(./images/footer.JPG);
+    background-size: 90%px;
+    opacity: 50%;
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+  
+  }
+  
+  .footer p {
+    font-size: 15px;
+  
+  }
+  
+  
+  @keyframes jiggle {
+    0% {
+      transform: rotate(0);
+    }
+  
+    25% {
+      transform: rotate(-5deg);
+    }
+  
+    75% {
+      transform: rotate(5deg);
+    }
+  
+    100% {
+      transform: rotate(0);
+    }
+  }
+  
+  /* for phones */
+  @media (max-width: 767px) {}
+  
+  /* for tablets */
+  @media (min-width: 768px) and (max-width: 1023px) {}
+  
+  /* for computers */
+  @media (min-width: 1024px) {}
